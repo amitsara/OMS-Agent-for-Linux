@@ -2,8 +2,8 @@
 
 ##Configuration summary
 1. Install and onboard the OMS Agent for Linux
-2. Send the required events to the agent
-3. Place the agent configuration file on the agent machine
+2. Send the required events to the agent on UDP port 25225
+3. Place the agent configuration [file](https://github.com/Microsoft/OMS-Agent-for-Linux/blob/4e90f23e62e935c32a90974ddc082b4966f26254/installer/conf/omsagent.d/security_events.conf) on the agent machine in ```/etc/opt/microsoft/omsagent/conf/omsagent.d/```
 4. Restart the syslog daemon and the OMS agent
 
 
