@@ -3,7 +3,7 @@
 ##Configuration summary
 1. Install and onboard the OMS Agent for Linux
 2. Send the required events to the agent on UDP port 25225
-3. Place the agent configuration [file](https://github.com/Microsoft/OMS-Agent-for-Linux/blob/4e90f23e62e935c32a90974ddc082b4966f26254/installer/conf/omsagent.d/security_events.conf) on the agent machine in ```/etc/opt/microsoft/omsagent/conf/omsagent.d/```
+3. Place the agent configuration [file][1] on the agent machine in ```/etc/opt/microsoft/omsagent/conf/omsagent.d/```
 4. Restart the syslog daemon and the OMS agent
 
 
@@ -43,7 +43,7 @@
 	```
 
 4. Place the following configuration file on the OMS Agent machine:  
-  - [security_events.conf](https://github.com/Microsoft/OMS-Agent-for-Linux/blob/4e90f23e62e935c32a90974ddc082b4966f26254/installer/conf/omsagent.d/security_events.conf)  
+  - [security_events.conf][1]
   _Fluentd configuration file to enable collection and parsing of the events_  
 	Destination path on Agent machine: ```/etc/opt/microsoft/omsagent/conf/omsagent.d/```  
 
@@ -60,3 +60,5 @@
 
 8. The events will appear in OMS under the **CommonSecurityLog** type.  
 Log search query: ```Type=CommonSecurityLog```
+
+[1]: https://raw.githubusercontent.com/Microsoft/OMS-Agent-for-Linux/4e90f23e62e935c32a90974ddc082b4966f26254/installer/conf/omsagent.d/security_events.conf
