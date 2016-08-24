@@ -1,4 +1,8 @@
-# Configuration for Common Event Format (CEF) event collection (Preview)
+# Configuration for 3rd party security event collection (Preview)
+
+OMS supports collection of the following 3rd party security event types:
+- **Common Event Format (CEF) events**
+- **Cisco ASA events**
 
 ##Configuration summary
 1. Install and onboard the OMS Agent for Linux
@@ -8,8 +12,8 @@
 
 
 ##Detailed configuration
-1. Download the OMS Agent for Linux, version 1.1.0-239 or above
-  - [OMS Agent For Linux, Public Preview (2016-07)](https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/v1.1.0-239)    
+1. Download the OMS Agent for Linux, version 1.2.0-25 or above
+	- [OMS Agent for Linux GA v1.2.0-25] (https://github.com/Microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_GA_v1.2.0-25)
 
 2. Install and onboard the agent to your workspace as described here:
   - [Documentation for OMS Agent for Linux](https://github.com/Microsoft/OMS-Agent-for-Linux)  
