@@ -1,12 +1,12 @@
-# Configuration for 3rd party security event collection (Preview)
+# Configuration for collection of security solution logs (Preview)
 
-OMS supports collection of the following 3rd party security event types:
-- **Common Event Format (CEF) events**
-- **Cisco ASA events**
+OMS supports collection of the following log types:
+- **Common Event Format (CEF) logs**
+- **Cisco ASA logs**
 
 ##Configuration summary
 1. Install and onboard the OMS Agent for Linux
-2. Send the required events to the agent on UDP port 25225
+2. Configure Syslog forwarding to send the required logs to the agent on UDP port 25225
 3. Place the agent configuration [file][1] on the agent machine in ```/etc/opt/microsoft/omsagent/conf/omsagent.d/```
 4. Restart the syslog daemon and the OMS agent
 
@@ -18,9 +18,9 @@ OMS supports collection of the following 3rd party security event types:
 2. Install and onboard the agent to your workspace as described here:
   - [Documentation for OMS Agent for Linux](https://github.com/Microsoft/OMS-Agent-for-Linux)  
 
-3. Send the required events to the OMS Agent for Linux
-  1. Typically the agent is installed on a different machine from the one on which the events are generated.
-	Forwarding the events to the agent machine will usually require several steps:
+3. Send the required logs to the OMS Agent for Linux
+  1. Typically the agent is installed on a different machine from the one on which the logs are generated.
+	Forwarding the logs to the agent machine will usually require several steps:
 	- Configure the logging product/machine to forward the required events to the syslog daemon (e.g. rsyslog or syslog-ng) on the agent machine.
 	- Enable the syslog daemon on the agent machine to receive messages from a remote system.
 	
